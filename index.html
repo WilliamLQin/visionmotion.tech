@@ -1,13 +1,18 @@
----
-layout: default
-title: {{ site.name }}
----
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cayman by jasonlong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/cayman.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/github-light.css" media="screen">
+  </head>
+  <body>
+    <h1 class="project-name">Vision Motion</h1>
+    <h2 class="project-tagline">Vision Motion is a mobile app that uses the camera to track an object and graph position, velocity, and acceleration!</h2>
+    <a href="https://github.com/WilliamLQin/Vision-Motion" class="btn">View on GitHub</a>
+    <a href="https://raw.github.com/WilliamLQin/Vision-Motion/VisionMotion.apk" class="btn">Download .apk</a>
+  </body>
+</html>
